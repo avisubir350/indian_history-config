@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: bharata-katha-app
-          image: <ACR_LOGIN_SERVER>/bharata-katha-app:latest
+          image: bhartakatha.azurecr.io/bharata-katha-app:1.0.33
           ports:
             - containerPort: 8080
           env:
