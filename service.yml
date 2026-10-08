@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bharata-katha-service
+  namespace: bharata-katha
+spec:
+  selector:
+    app: bharata-katha-app
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: ClusterIP

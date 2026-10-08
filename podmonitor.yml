@@ -1,0 +1,13 @@
+apiVersion: azmonitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: bharata-katha-podmonitor
+  namespace: bharata-katha
+spec:
+  selector:
+    matchLabels:
+      app: bharata-katha-app
+  podMetricsEndpoints:
+    - port: 8080
+      path: /metrics
+      interval: 30s
